@@ -7,6 +7,7 @@ import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
 import History from './components/History';
 import Cryptocurrencies from './components/Cryptocurrencies';
+import CryptoCard from './components/CryptoCard';
 
 
 import "./styles.scss";
@@ -31,7 +32,8 @@ const App = () => {
         render={props => <Charts {...props} coinData={coinData} />}
       />
       <Route path='/history' component={History} />
-      <Route path='/cryptocurrencies' component={Cryptocurrencies} />
+      <Route exact path='/cryptocurrencies' component={Cryptocurrencies} />
+      <Route path='/cryptocurrencies/:coin' render={ props => { return <CryptoCard {...props} coinData={coinData} /> }} />
     </div>
   );
 };
