@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
 
 export default function Cryptocurrencies() {
-    return (
-        <h1>Cryptocurrencies</h1>
-    )
+  return (
+    <div>
+      <h1>Cryptocurrencies</h1>
+      <p>BlaBlaBla</p>
+    </div>
+  );
 }

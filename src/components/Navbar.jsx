@@ -13,9 +13,9 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
-      <h1>Crypto Tracker</h1>
+      <h1><Link to='/'>Crypto Tracker</Link></h1>
       <h2><Link to='/history'>History of crytocurrencies</Link></h2>
-      <h2><Link to='/cryptocurrencies'>Crytocurrencies</Link></h2>
+      <h2><Link to='/cryptocurrencies'>Cryptocurrencies</Link></h2>
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
